@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');/*import na font od google fonts
+posle vo font-family go koristime toj font*/
+
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}   
+
+
+ol {/*ordered list <ol> selector*/
+/* 
+    list-style-type: square; *//*menuvanje na 1. zbor1, 2. zbor2 itn, vo ovoj slucaj ke ima kvadracte zbor1, kvadratce zbor2*/ 
+    list-style-type: none;
+    padding: 0;
+}
+
+/* ul {
+    list-style: square url('../images/checkmark.png');/*ako ne se loadne slikata ke se prikaze square*/
+/*} */
+
+ul li:nth-child(2) {/*vtoroto dete t.e child vo unordered list, ke bide crveno vo ovoj slucaj*/
+    color: red;
+}
+
+ul li::marker {/*samo za marker t.e kvadratcinja vo ovoj slucaj ke bidat zolti*/
+    content: "Denari: ";
+    color: yellow;
+}
