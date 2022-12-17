@@ -1,0 +1,47 @@
+
+* {/*univerzalen selektor, t.e selektira se*/
+    font-family: monospace;/*opcija za menuvanje na fontot, primer monospace vo ovoj slucaj*/
+}
+
+/*element selektor*/
+body {/*selektirame body*/
+    font-size: 22px;/*font size =22 pixels, golemina na tekstot*/
+    border: 3px solid black; /*border okolu body so 3px i e crna*/
+}
+/*isto taka body e parent na site koi nasleduvaat od nego, i site opcii na primer so rabotat so tekst i tipografija*/
+
+p {
+    color: purple;
+}
+
+
+h1 {/*isto taka moze da napiseme h1,h2,h3 itn da apply na site headings, i ova se vika group selektor*/
+    color: blue;
+}
+/*class selektor*/
+/*class startuva so tocka (.) pa imeto na klasata*/
+/*<p id="second" class="gray"> ako imame vo p, togas ova se apply na site class="gray"*/
+.gray {
+    color: gray; /*color e boja na tekstot*/
+}
+
+
+/*id selektor*/
+#second {
+    font-style: italic; /*font style kako na primer italic*/
+}
+
+/*selektiranje na element vnatre koj e vnatre vo element, primer  repellendus <span class="highlight">nihil</span>*/
+/*p span {*//*span e vnatre vo p delot*/
+    /*no ova vaka ne e prakticno, i namesto ova definirame klasa highlight vo span delot vo html*/
+/*    text-transform: uppercase; *//*go transformirame tekstot vo golemi bukvi*/
+  /*  background-color: gold;*/ /*bojata vo pozadina e zlatna*/
+/*}*/
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/*css raboti kako waterfall, t.e cita od gore pa nadole, na primer ako imame h selektor koj dava color purple, i posle ako imame isto taka
+p selektor koj dava boja sina, toa znaci deka bukvite na tekstot ke bidat sini t.e vtoriot p pravi override na prviot p*/
+/*isto taka klasite imaat pogolema prednost od klasicnite selektori*/
