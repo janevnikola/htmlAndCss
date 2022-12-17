@@ -1,0 +1,39 @@
+
+/*za da resetirame se koristirme wildcard selektor koj gi selektira site selektori*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;/*context-box kazuva: goleminata koja ja setirame e samo za contentot t.e h1 vo ovoj slucaj
+    i ne vklucuva kalkulacii za margin, padding, border, */
+
+}
+
+.container {
+
+    border: dashed red;/*isto kako i kaj margin, padding, go ima i kaj border*/
+    border-top: 5px solid;/*na primer gornata strana ke bide 5 pixels i solid*/
+    border-right: 10px dotted; /*desnata strana ke bide so tocki i 10 pixels*/
+    /*ako drugite ne gi imenuvame, ke ostanat default na toa so go dodavame vo border*/
+    border-top-width: 10px;/*isto taka mozeme da promenime sirocinata na border top linijata*/
+  /*  width: 400px;*/ /*primer setirame 400px za h1, i ova vazi samo za contentot, a ne padding, margin itn*/
+   /* font-size: 2em;*/
+   font-size: 1.5em;
+   margin: 1.5em; /*isto kako i kaj padding, imame margin-top, left, right, bottom, i namesto 1.5em nasekade*/
+   /* margin-top: 1.5em;
+   margin-right: 2em;
+   margin-bottom: 2em;
+   margin-left: 2em; */
+    padding: 0.5em;
+}
+
+.circle {
+    margin: 40px auto;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    outline: 5px solid red;
+    outline-offset: 5px;
+
+}
