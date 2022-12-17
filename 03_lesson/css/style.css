@@ -1,0 +1,12 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: papayawhip; /*boja na pozadinata*/
+    color: darkblue;
+}
+
+p {
+    color:antiquewhite; /*dokolku kliknime na kvadratceto odma do color ke ni se otvori paleta i moze da birame
+    transparentnost i boja i avtomatski ke ni dade hexadecimal kod za bojata, ili pak mozeme na internet da najdeme hex*/
+}
