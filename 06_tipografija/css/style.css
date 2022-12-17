@@ -1,0 +1,29 @@
+/*
+Tipografija e nacin koj tekstot e prezentiran i nareden, organiziran
+*/
+
+body {
+    padding: 10%;
+    font-size: 2rem; /*referencira kon root element font size koj browserot go setira*/
+    
+}
+
+/* input, button {
+    font:inherit; /*nasledi od tvojot roditel, vo ovoj slucaj body e parent*/
+/*}*/
+
+p {
+    text-decoration: underline; /* podvlecuvanje na tekstot */
+    text-transform: capitalize; /* ke dodava golema bukva na sekoj zbor */
+    text-align: justify; /* ova e kako vo word left, right ili center na paragrafite, ili justify kade sto krajot na tekstot e izednacen
+     */
+    text-indent: 50px; /* ova e kako da si stavil tab pred paragrafot */
+    line-height: 1.4; /*prostorot pomegju redovicte*/
+    letter-spacing: 0.1em;/*prostorot pomegju zborovite*/
+    font-weight: 700; /*boldiranje*/
+}
+
+
+.test {
+    text-decoration: line-through;
+}
