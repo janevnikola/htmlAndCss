@@ -1,0 +1,19 @@
+/*p {*/
+ /*   font-size: 16px;*/ /*koga pisime font-size, go prevzemame izborot za korisnikot da ne moze da si go smeni vo settings vo browserot
+    za font settings, no ako go nema ova font-size opcija togas browserot odlucuva spored settiranite settings vo options*/
+/*}*/
+
+h1 {
+    border: 2px dashed red; /*stavame border so e 2pixels okolu h1 i e red, dashed znaci isprekinati linii*/
+    width: 10%; /*ja postavuvame sirocinata na 50%*/
+    padding-right: 5em;/*padding right znaci dopolnuvanje t.e dodavanje prazno na desno*/
+    padding-left: 5em;/*padding left znaci dopolnuvanje t.e dodavanje prazno na levo*/
+    padding-top: 5em;/*padding top znaci dopolnuvanje t.e dodavanje prazno na gore*/
+    padding-bottom: 5em;/*padding bottom znaci dopolnuvanje t.e dodavanje prazno na dole*/
+    /*padding: 5em;*//*no moze da imame generalno padding za site strani, i ova ke mu stavi 5em na site strani*/
+}
+
+p {
+    background-color: skyblue;
+    width: 40ch; /*isto taka ova e za karakteri na primer za paragraph, sirocinata ke bide 40ch t.e 40 karakteri*/
+}
