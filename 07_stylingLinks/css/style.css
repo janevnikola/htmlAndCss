@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');/*import na font od google fonts
+posle vo font-family go koristime toj font*/
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}   
+
+a {/*psvedno klasite imaat pogolema specificnost i zatoa psevdo klasite ke go prepokrijat a selektorot, zatoa a treba 
+    da se specificira prvo*/
+    text-decoration: underline;
+    /*cursor: not-allowed;*/ /*ova kazuva deka cursorot koga ke odi na <a> tagot ke se smeni vo not allowed*/
+    cursor: pointer;
+    color: blue; /*ova e default vrednosta na linkot*/
+}
+
+a:visited {
+
+    /*isto taka postoi i psevdo klasa za <a> tagot, a toa e visited t.e koga linkot e visited*/
+    color: purple;
+}
+
+a:hover, a:focus {/*isto taka postoi i hover psevdo klasa t.e koga gluvceto t.e pointerot t.e strelkata e nad linkot*/
+/*focus se stava ako nekoj koristi tab na nasata web strana, koga ke se pretisne tab, ke otide na linkot i ke svetne zeleno
+vo ovoj slucaj*/
+    color: green;/*bojata avtomatski se menuva vo zelena*/
+    background-color: gold;
+}
+
+a:active { /*koga linkot e pritisnat t.e active*/
+    color: red; /*bojata avtomatski se menuva vo crvena*/
+}
