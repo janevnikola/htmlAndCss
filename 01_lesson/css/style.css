@@ -1,0 +1,4 @@
+p { /*p znaci deka ovoj css se odnesuva na p t.e na <p> */
+    font-size: 64px; /*razlicni settings*/
+    color: purple;
+}
