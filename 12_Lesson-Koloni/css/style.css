@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+/*columns klasa vo section delot*/
+.columns{
+    /*column-count: broj e kolku koloni sakame da imame */
+    column-count: 4;
+    /*sirinata na kolonite da ne bide pomala od 250 pixels po kolona*/
+    column-width: 250px;
+    /*divider ili linii pomegju kolonite*/
+    column-rule: 3px solid black;
+    /*spacing t.e praznina pomegju liniite*/
+    column-gap: 3rem;
+}
+.columns p{
+margin-top: 0;
+}
+
+.columns h2{
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    break-inside: avoid;
+    break-before: column;
+}
+
+.columns .quote{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color:black;
+    /*ova ke gi span site koloni na nasiot website*/
+    column-span: all;
+}
+
+/*no wrap ili bez da se skrsi zborot na povekje delcinja. Vo ovoj slucaj toa e the author*/
+.nowrap{
+    white-space: nowrap;
+}
