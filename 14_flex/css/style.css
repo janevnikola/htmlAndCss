@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  /*ke bide flex*/
+  display: flex;
+  /*i ke pocnuva od flexot kaj so zavrsuva*/
+/*  justify-content: flex-end;
+justify-content e za horizontal*/
+/*ili moze da kazeme da e center
+vo ovoj slucaj centrirani se horizontalno*/
+justify-content: center;
+/*dobivame 1 rem gap pomegju sekoj flex item*/
+gap:1rem;
+/*direkcijata na flex ke bide po kolona*/
+flex-direction: row;
+/*align-items e za vertikalno
+t.e mozeme items da gi centrirame i vertikalno centrirani*/
+align-items: center;
+/*wrapuva koga browserot ke se smali*/
+flex-wrap: wrap;
+/*gi podreduva redicite*/
+align-content: space-between;
+} 
+
+.box {
+ /*  min-width: 100px; */
+  min-height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*ova veli deka ako items treba da rastat za da ja popolnat stranicata, tie ke ke rastat*/
+  flex-grow: 1;
+  /*ova e isto kako min-width ama ne e isto*/
+  flex-basis: 100px;
+}
+
+/*go selektirame vtoriot item*/
+.box:nth-child(2){
+/*pravime override na flex-grow*/
+flex-grow: 2;
+}
