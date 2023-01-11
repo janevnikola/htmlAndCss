@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*grid ne moze da ima prazni mesta*/
+* { /*basic css reset*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*importning font family*/
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+.box {
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.box:first-child{/*prvoto dete od box klasata*/
+  background-color: blue;
+  /*kolku koloni zima ova dete*/
+  grid-column-start: 1;/*pocnuva od prvata kolona*/
+  grid-column-end: 4;/*zavrsuva na cetvrtata*/
+}
+/*.box:nth-child(child)
+selektiranje na dete child*/
+.box:last-child{
+  background-color: greenyellow;
+  grid-row-start: 3;/*pocni od tretata redica*/
+  grid-row-end: 5;/*zavrsi na pettata*/
+}
+
+.container{
+display:grid; /*divs ke bidat grid items vo grid*/
+/*
+grid-auto-flow: column; */
+/*grid items ke bidat vo kolona*/
+
+/*ponekogas sakame da imame povekje kontrola namesto setiranje samo grid-auto-flow i da pustime kolonite 
+da bidat definirani avtomatski*/
+/*grid-template-columns: 2fr 1fr 1fr;*//*so ova ke imame tri koloni so postavenite dimenzii t.e width*/
+/*fraction units se koristi za css grids, zatoa ke koristime fr*/
+/*no ne mora za sekoja kolona da definirame fr, tuku toa mozeme da go napravime so funkcija repeat(kolona, fr)
+*/
+grid-template-columns: repeat(4,2fr);
+grid-auto-rows: 200px;  /*grid za redicite*/
+row-gap: 1em;/*gap za redica*/
+column-gap: 1em;/*gap za colona*/
+}
+
+
+
